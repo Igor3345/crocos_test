@@ -1,0 +1,134 @@
+.footer{
+    background-color: #001832;
+    padding-top: 62px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width:991px){
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-row-gap: 44px;
+    }
+}
+
+.footer_section{
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width:991px){
+
+        &.__pictures{
+            display: none;
+        }
+    }
+}
+
+.footer_subsection{
+    .footer_subsection__title{
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+}
+
+.footer_social-links{
+    display: inline-block;
+
+    svg{
+        fill:  rgba($color: #FFFFFF, $alpha: 0.12);
+        transition: all 0.3s ease;
+        width: 30px;
+        height: 30px;
+    }
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+
+    &:hover{
+        svg{
+            fill:  rgba($color: #FFFFFF, $alpha: 1);
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+.footer_phone_link{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+
+.footer_pickture{
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+}
+
+.footer_section__links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_section__title{
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    margin-bottom: 19px;
+}
+
+.footer_link{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    transition: all 0.3s ease;
+    display: inline-block;
+
+    &:not(:last-child){
+        margin-bottom: 12px;
+    }
+
+    &:hover{
+        color: #03B0CD;
+        transition: all 0.3s ease;
+    }
+}
+
+.footer__bottom{
+    padding: 34px 0;
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.2);
+    margin-top: 42px;
+}
+
+.footer__bottom__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width:991px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.bottom1{
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    display: inline-block;
+    margin-right: 13px;
+}

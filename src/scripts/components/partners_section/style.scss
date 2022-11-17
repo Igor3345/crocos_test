@@ -1,0 +1,21 @@
+.partners_section{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    margin-bottom: 90px;
+
+    @media(max-width:991px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.partners_item__link{
+    @media(max-width:991px){
+        display: none;
+
+        &:nth-child(-n+3){
+            display: block;
+        }
+    }
+}

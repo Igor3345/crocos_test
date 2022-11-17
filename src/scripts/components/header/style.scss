@@ -1,0 +1,147 @@
+.header{
+    background: rgba(1, 24, 50, 0.3);
+    backdrop-filter: blur(7.5px);
+    padding: 22px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo{
+    max-width: 144px;
+}
+
+.header__tabs{
+    .btn{
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        line-height: 19.5px;
+        font-weight: 500;
+        border-radius: 29px !important;
+        border: none;
+        color: #ffff;
+
+        &:not(:last-child){
+            margin-right: 60px;
+        }
+
+        &:hover{
+            background-color: #ffff;
+            color: #011832;
+        }
+    }
+
+    .btn-check:checked + .btn{
+        color: #011832;
+        background-color: #fff;
+    }
+
+    @media(max-width: 1199px){
+        display: none;
+    }
+}
+
+.header__links{
+
+    a{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 27px;
+        }
+        svg{
+            fill: rgba($color: #fff, $alpha: 0.3);
+            transition: all 0.3s ease;
+        }
+    
+        &:hover{
+            svg{
+                fill: #fff;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    @media(max-width: 767px){
+        display: none;
+    }
+}
+
+.header__search{
+
+    a{
+        svg{
+            stroke: #fff;
+        }
+    }
+}
+
+.header__burger-menu{
+    a{
+        svg{
+            stroke: #fff;
+        }
+    }
+}
+
+.header__languges{
+
+    .form-select{
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        background-image:url('./select_arrow.png');
+        background-size: auto;
+        padding: 0.375rem 2rem 0.375rem 0.75rem;
+        margin-bottom: 0 !important;
+
+        option{
+            color: #011832;
+        }
+    }
+}
+
+.header__basket{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    @media(max-width:480px){
+        display: none;
+    }
+}
+
+.header__basket-icon{
+    margin-right: 10.9px;
+    svg{
+        fill: #fff;
+    }
+}
+
+.header__basket-quality{
+    display: flex;
+    flex-direction: column;
+    .header__basket-title{
+        text-transform: uppercase;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 16px;
+        line-height: 19.5px;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
+    }
+    .header__basket-cost{
+        font-family: 'Montserrat',sans-serif;
+        color: #fff;
+        font-size: 9px;
+        line-height: 10.9px; 
+    }
+}
